@@ -1,0 +1,352 @@
+/* Landing.css */
+*{
+    margin: 0;
+    padding: 0;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: white;
+}
+
+.top {
+    background-image: url('https://images.unsplash.com/photo-1506765515384-028b60a970df?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(1,0,9,1) 0%, rgba(0,0,0,0) 100%);
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+    color: #ddd;
+    margin: 1%;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #ddd;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #ddd;
+}
+
+.overlay {
+    position: absolute;
+    left: 25%;
+    bottom: 35%;
+    /* bottom: 10%;
+    right: 20%;
+    margin: 30% auto; */
+    width: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2% 2%;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+.overlay h1{
+    margin-top: 0;
+}
+button {
+    background: #ff6f61;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+/* Main Section */
+.main {
+    flex: 1;
+    padding: 20px;
+}
+.card-container{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 1%;
+}
+.card{
+    background-image: url('https://images.unsplash.com/photo-1604147706283-d7119b5b822c?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    border: 2px solid black;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin: 0 2%;
+    padding: 2%;
+    text-align: center;
+}
+.card h3{
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+/* About Section */
+.about-container{
+    animation: fadeIn 1s ease-out forwards;
+    margin: 3% 1%;
+    background-color: white;
+    color: black;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  }
+  .about-sectionright {
+    animation: fadeIn 1s ease-out forwards;
+    background-size: cover;
+    background-position: center;
+    padding: 5%;
+    text-align: center;
+  }
+  
+  .image-textright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .image {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .image img {
+    border-radius: 30px;
+    max-width: 70%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .text {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: 900;
+  }
+  
+  .text p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  /*About left section */
+  .about-sectionleft {
+    animation: fadeIn 1s ease-out forwards;
+    background-size: cover;
+    background-position: center;
+    padding: 5% ;
+    text-align: center;
+  }
+  
+  .image-textleft {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  
+  .imageleft {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .imageleft img {
+    border-radius: 30px;
+    max-width: 70%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .textleft {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .textleft h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: 900;
+  }
+  
+  .textleft p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+/* Contact Section */
+.page-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: white;
+}
+
+.contact-form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+}
+
+h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 98%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 14px;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.submit-button:hover {
+    background-color: white;
+    color: black;
+}
+/* Footer Section */
+.bottom {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons{
+    width: 19%;
+}
+.icon{
+    margin: 0 2%;
+}
+@media (max-width: 1200px) {
+    .overlay {
+        left: 10%;
+        width: 80%;
+    }
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar{
+        flex-direction: column;
+    }
+    .logo{
+        margin-top: 2%;
+    }
+    .navbar ul {
+        flex-direction: row;
+        align-items: center;
+        margin-top: 1%;
+    }
+    .image-textright, .image-textleft {
+        flex-direction: column;
+    }
+    .image img, .imageleft img {
+        max-width: 100%;
+    }
+    .text, .textleft {
+        text-align: center;
+    }
+    .overlay {
+        left: 5%;
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar ul {
+        padding: 0;
+        margin-top: 3%;
+    }
+    .logo{
+        margin-top: 3%;
+    }
+    .overlay {
+        padding: 10px;
+        width: 85%;
+    }
+    .submit-button {
+        font-size: 16px;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .icons{
+        display: inline-block;
+        width: 80%;
+    }
+    span{
+        margin-top: 3%;
+    }
+}
